@@ -1,0 +1,61 @@
+div.card .front,
+div.card .back,
+div.card.success {
+  border: 5px solid blue;
+  border-radius: 10px;
+}
+
+div.card .front {
+  color: gold;
+}
+
+div.card .back {
+  color: blue;
+}
+
+div.card.success {
+    color: green;
+    margin-right: 0;
+}
+
+div.card {
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    text-align: center;
+    font-size: 80px;
+}
+
+div.row {
+    clear: left;
+    height: 120px;
+}
+
+div.hidden {
+  display: none;
+}
+
+div.selected,
+div.selected .card {
+  background: pink;
+}
+
+div.card :focus {
+    outline: 5px solid pink;
+}
+
+#controls label,
+#controls select,
+#controls button {
+    display: block;
+    margin: 5px;
+    font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  min-width: 375px;
+}

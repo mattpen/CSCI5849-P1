@@ -1,0 +1,43 @@
+@media (min-width: 1101px) {
+  #nav {
+    display: none;
+  }
+
+  #controls {
+    width: 150px;
+  }
+
+  #help {
+    width: 250px;
+  }
+
+  #play {
+    width: 685px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+  }
+
+  #controls,
+  #help,
+  #play {
+    height: calc(100vh - 70px);
+    float: left;
+  }
+
+  #head {
+    background: lightgrey;
+    color: blue;
+    height: 70px;
+  }
+
+  .content {
+    margin: auto;
+    width: calc( 150px + 250px + 685px + 2px);
+  }
+
+  h1, 
+  h3 {
+    margin: 0;
+    text-align: center;
+  }
+}

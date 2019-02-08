@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSCI5849: P1 - Memory Game</title>
+    <link rel="stylesheet" href="memory.css"/>
+    <link rel="stylesheet" href="memory_small.css"/>
+    <link rel="stylesheet" href="memory_large.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>  
+    <div id="head" role="banner">
+      <h1>Memory Game</h1>
+      <h3>Author: Matt Pennington</h3>
+    </div>
+
+    <div id="nav">
+      <div class="left"><button id="control-toggle"><i class="fa fa-bars"></i></button></div>
+      <h1>Memory Game</h1>
+      <div class="right"><button id="help-toggle"><i class="fa fa-question"></i></button></div>
+    </div>
+
+    <div class="content">
+      <div id="controls">
+        <label id="size-label">Size:</label>
+        <select aria-labelledby="size-label" id="size-select">
+          <option value="2">2</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+        </select>
+
+        <label id="type-label">Type of cards:</label>
+        <select aria-labelledby="type-label" id="type-select">
+          <option value="letters">Letters</option>
+          <option value="numbers">Numbers</option>
+        </select>
+
+        <button id="start">Start Game</button>
+      </div>
+
+      <div id="play" aria-live="polite" role="main"></div>
+
+      <div id="help">
+        <h3>Instructions:</h3>
+        <p>This is a basic game of memory solitaire.  Flip over any two cards.  If they are a match then they are removed from the board. If they are not a match they are flipped back.  The game is won when all cards are removed fromt he board.</p>
+        <p>To use with a pointing device, simply click or tap the cards.</p>
+        <p>To use with a keyboard, there are two methods of input.  First, you may navigate between the cards with the TAB key and use SPACE or ENTER/RETURN to flip the card over.  You may also use the number keys to select a row then column.  Use the key 'f' to flip the highlighted card over and the key 'c' to clear your selection.</p>
+        <p>This game was only tested for use using Chrome in Windows 10 and may not be cross-platform compatible.</p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script type="text/javascript" src="https://underscorejs.org/underscore-min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="memory.js"></script>
+  </body>
+</html>

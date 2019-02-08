@@ -1,0 +1,54 @@
+@media (max-width: 1100px) {
+#head {
+  display: none;
+}
+
+h1 {
+  display: inline-block;
+  color: blue;
+  margin: 7px;
+}
+
+#nav .left {
+  float: left;
+}
+
+#nav .right {
+  float: right;
+}
+
+#nav {
+  height: 50px;
+  padding: 10px;
+  background: #ccc;
+  text-align: center;
+}
+
+#nav button {
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+  color: blue;
+  background: none;
+  border: none;
+}
+
+#play {
+  overflow-x: auto; 
+}
+
+#play .row {
+  width: 685px;
+}
+
+#controls,
+#help {
+  display: none;
+  position: absolute;
+  top: 70px;
+  z-index: 100;
+  height: calc(100vh - 70px);
+  width: 100%;
+  background: white;
+}
+}
