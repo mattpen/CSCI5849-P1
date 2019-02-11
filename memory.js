@@ -214,7 +214,6 @@ $( document ).keypress( event => {
     const $card = $( '.row-' + selectedRow + ' .col-' + selectedCol + ' .card' )
     if ( $card[ 0 ] ) {
       const $side = $card.find( $card.data( 'flip-model' ).isFlipped ? '.back' : '.front' )
-      console.log( $side);
       $side.click();
       clearFocus()
     }
@@ -255,7 +254,6 @@ $( '#help-toggle' ).click( () => {
 
 // Ensure appropriate elements are shown based on screen size
 const resetScreen = () => {
-  console.log( 'ack' )
   if ( window.matchMedia( '(min-width: 1101px)' ).matches ) {
     $('#controls').show();
     $('#help').show() 
